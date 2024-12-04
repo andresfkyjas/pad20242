@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
   
     steps:
       - name: paso1 - ubicacion ruta base
@@ -21,4 +23,12 @@ jobs:
         run: pip install --upgrade pip
       - name: paso4 - instalar dependencias
         run: pip install -e .
+      - name: paso5 - ejecutar proyecto
+        run: python src/actividad/ejecucion.py
+      - name: paso6 - auto commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with: 
+          commit_user_name: Andres Callejas
+          commit_user_email: andres.callejas@iudigital.edu.co
+          commit_author: andresfkyjas
   
