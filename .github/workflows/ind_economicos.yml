@@ -1,0 +1,24 @@
+name: indicadores_economicos
+
+on:
+  push:
+    branches: [ feature/andreskyjas ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+      - name: paso1 - ubicacion ruta base
+        uses: actions/checkout@v4
+      - name: paso2 - instalacion python 3.7.9
+        uses: actions/setup-python@v5
+        with:
+            python-version: '3.7.9' 
+      - name: paso3 - actualizar pip
+        run: pip install --upgrade pip
+      - name: paso4 - instalar dependencias
+        run: pip install -e .
+  
