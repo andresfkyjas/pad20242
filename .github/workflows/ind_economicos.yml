@@ -35,5 +35,5 @@ jobs:
           branch: feature/andreskyjas
           commit_user_name: Andres Callejas
           commit_user_email: andres.callejas@iudigital.edu.co
-          commit_author: andresfkyjas
+          commit_author: andres.callejas
   
