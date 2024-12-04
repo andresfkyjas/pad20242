@@ -16,7 +16,7 @@ jobs:
       - name: paso2 - instalacion python 3.7.9
         uses: actions/setup-python@v5
         with:
-            python-version: '3.7.9' 
+            python-version: '3.9.2' 
       - name: paso3 - actualizar pip
         run: pip install --upgrade pip
       - name: paso4 - instalar dependencias
