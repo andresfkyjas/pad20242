@@ -5,6 +5,7 @@ setup(
     version='0.1.0',
     packages=find_packages(),
     python_requires= '>3.7',
+    platforms=['any'],
     install_requires=[
         'openpyxl==3.1.3',
         'pandas==1.3.5',
