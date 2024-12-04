@@ -7,8 +7,7 @@ setup(
     python_requires= '>3.9',
     platforms=['any'],
     install_requires=[
-        'openpyxl==3.1.3',
-        'pandas==1.3.5',
+        'pandas',
         'selenium==4.11.2',
         'webdriver-manager==4.0.2'
     ]
