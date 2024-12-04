@@ -5,10 +5,12 @@ __pycache__/
 
 # C extensions
 *.so
-
+.vscode
 # Distribution / packaging
 .Python
 build/
+venv/
+venv_dos/
 develop-eggs/
 dist/
 downloads/
