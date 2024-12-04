@@ -8,6 +8,7 @@ setup(
     platforms=['any'],
     install_requires=[
         'pandas',
+        'setuptools',
         'selenium==4.11.2',
         'webdriver-manager==4.0.2'
     ]
