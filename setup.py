@@ -4,7 +4,7 @@ setup(
     name='actividad',
     version='0.1.0',
     packages=find_packages(),
-    python_requires= '3.9.2',
+    python_requires= '>3.9',
     platforms=['any'],
     install_requires=[
         'openpyxl==3.1.3',
